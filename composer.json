@@ -1,0 +1,30 @@
+{
+  "name": "mostafaelashhab/smart-response",
+  "description": "Smart and minimal response builder for Laravel APIs",
+  "type": "library",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Mostafaelashhab\\SmartResponse\\": "src/"
+    }
+  },
+  "require": {
+    "php": "^8.0",
+    "illuminate/support": "^8.0|^9.0|^10.0|^11.0"
+  },
+  "authors": [
+    {
+      "name": "Mostafaelashhab",
+      "email": "mostafa4661a@gmail.com"
+    }
+  ],
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Mostafaelashhab\\SmartResponse\\SmartResponseServiceProvider"
+      ]
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
