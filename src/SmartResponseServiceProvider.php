@@ -2,6 +2,7 @@
 
 namespace Mostafaelashhab\SmartResponse;
 
+use Illuminate\Support\Facades\Response;  // أضف هذا السطر
 use Illuminate\Support\ServiceProvider;
 
 class SmartResponseServiceProvider extends ServiceProvider
@@ -18,6 +19,7 @@ class SmartResponseServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__ . '/../resources/lang' => resource_path('lang/vendor/smart-response'),
         ], 'smart-response-translations');
+
         Response::macro('success', function ($message = null, $data = null, $request = null) {
             return SmartResponse::success($message, $data, $request);
         });
